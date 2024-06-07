@@ -59,8 +59,8 @@ public class HomePage extends BaseClass {
 		}
 		
 		public void waitForElement(WebElement Element) {
-			 WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(10));
-			  wait.until(ExpectedConditions.elementToBeClickable(Element));
+			WebDriverWait wait = new WebDriverWait(browser, Duration.ofSeconds(10));
+			wait.until(ExpectedConditions.elementToBeClickable(Element));
 		}
 		
 		public String CellValue(int row, int column) {

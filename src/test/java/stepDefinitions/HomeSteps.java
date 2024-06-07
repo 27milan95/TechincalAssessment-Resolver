@@ -1,4 +1,4 @@
-package StepDefinition;
+package stepDefinitions;
 
 import java.util.List;
 import java.util.concurrent.TimeUnit;
@@ -55,13 +55,11 @@ public class HomeSteps extends BaseClass {
 	@Then("User should see {int} values in the list group")
 	public void user_should_see_values_in_the_list_group(int ExpectedListItemCount) {
 		Assert.assertEquals(homepage.Test2_ListItem.size(), ExpectedListItemCount);
-
 	}
 
 	@And("the second list item text should be {string}")
 	public void the_second_list_item_text_should_be(String ExpectedListItem) {
-		Assert.assertEquals(homepage.ActualListItem(1), ExpectedListItem);
-	  
+		Assert.assertEquals(homepage.ActualListItem(1), ExpectedListItem);  
 	}
 
 	@And("its badge value should be {string}")
@@ -79,7 +77,6 @@ public class HomeSteps extends BaseClass {
 		homepage.Test3_dropdown.click();
 		homepage.getByText(text).click();  
 	}
-
 
 	@Then("the first button should be enabled")
 	public void the_first_button_should_be_enabled() {
@@ -103,13 +100,12 @@ public class HomeSteps extends BaseClass {
 
 	@Then("User should see a success message")
 	public void user_should_see_a_success_message() {
-	 Assert.assertTrue(homepage.Test5_ActualSuccessMessage.isDisplayed());
+		Assert.assertTrue(homepage.Test5_ActualSuccessMessage.isDisplayed());
 	}
 
 	@And("the button should be disabled")
 	public void the_button_should_be_disabled() {
 		Assert.assertFalse(homepage.Test5_button.isEnabled());
-	
 	}
 
 	@Then("the value of the cell \\({int}, {int}) should be {string}")

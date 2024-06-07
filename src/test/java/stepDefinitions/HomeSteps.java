@@ -62,9 +62,9 @@ public class HomeSteps extends BaseClass {
 		Assert.assertEquals(homepage.ActualListItem(1), ExpectedListItem);  
 	}
 
-	@And("its badge value should be {string}")
-	public void its_badge_value_should_be(String ExpectedBagdeValue) {
-		Assert.assertEquals(homepage.Test2_BadgeList.get(1).getText(), ExpectedBagdeValue);
+	@And("its badge value should be {int}")
+	public void its_badge_value_should_be(int ExpectedBagdeValue) {
+		Assert.assertEquals(homepage.ActualBadgeValue(1), ExpectedBagdeValue);
 	}
 
 	@Then("{string} should be the selected value")

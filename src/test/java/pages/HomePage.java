@@ -73,4 +73,9 @@ public class HomePage extends BaseClass {
 			String ListItem = ListItemAndBadgeValue.substring(0,ListItemAndBadgeValue.length()-2);
 			return ListItem;
 		}
+		
+		public int ActualBadgeValue(int n) {
+			int BadgeValue = Integer.parseInt(Test2_BadgeList.get(n).getText());
+			return BadgeValue;
+		}
 }

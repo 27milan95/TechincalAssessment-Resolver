@@ -12,7 +12,7 @@ Feature: Testing functionalities on the Home Page
     When User navigate to "Test 2" div
     Then User should see 3 values in the list group
     And the second list item text should be "List Item 2"
-    And its badge value should be "6"
+    And its badge value should be 6
 
   Scenario: Verify Test3 functionality
     When User navigate to "Test 3" div
